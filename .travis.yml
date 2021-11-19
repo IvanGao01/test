@@ -2,3 +2,9 @@ language: go
 
 go:
   - main
+
+before_script:
+  - go mod tidy
+
+script:
+  - go test
