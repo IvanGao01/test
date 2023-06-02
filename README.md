@@ -30,49 +30,22 @@ Eight different users performed twenty repetitions of twenty different gestures,
 | participant | STRING    | YES  |                            |
 | gesture     | STRING    | YES  |                            |
 
-
 <details>
   <summary>Click here to show/hide data</summary>
 
-  <div style="overflow-x: auto;">
-    <table>
-      <thead>
-      <tr>
-        <th>time</th>
-        <th>time_nanos</th>
-        <th>time_event</th>
-        <th>accel_x</th>
-        <th>accel_y</th>
-        <th>accel_z</th>
-        <th>participant</th>
-        <th>gesture</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>1384186054309</td>
-        <td>78952598976553</td>
-        <td>1452892000000</td>
-        <td>1.532289</td>
-        <td>-0.919373</td>
-        <td>10.113108</td>
-        <td>U01</td>
-        <td>01</td>
-      </tr>
-      <tr>
-        <td>1384186054419</td>
-        <td>78952708778799</td>
-        <td>1453002000000</td>
-        <td>0.919373</td>
-        <td>-0.919373</td>
-        <td>9.959879</td>
-        <td>U01</td>
-        <td>01</td>
-      </tr>
-      <!-- 添加更多数据行 -->
-      </tbody>
-    </table>
-  </div>
+| time          | time_nanos     | time_event    | accel_x  | accel_y   | accel_z   | participant | gesture |
+| ------------- | -------------- | ------------- | -------- | --------- | --------- | ----------- | ------- |
+| 1384186054309 | 78952598976553 | 1452892000000 | 1.532289 | -0.919373 | 10.113108 | U01         | 01      |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+|               |                |               |          |           |           |             |         |
+
 </details>
 
 **Disclaimer: SmartWatch Gestures Dataset is provided for research or academic purposes only. Publications and works that use this dataset should please refer to one of the papers referenced below.**
