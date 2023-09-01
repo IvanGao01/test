@@ -1,0 +1,33 @@
+name: Merge Notification
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check PR labels
+        id: pr_labels
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = await github.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+            const labels = pr.data.labels.map(label => label.name);
+            console.log(labels);
+            core.setOutput('labels', labels);
+
+      - name: Send Notification Email
+        if: contains(steps.pr_labels.outputs.labels, 'api-change') || contains(steps.pr_labels.outputs.labels, 'documentation')
+        run: |
+          # Add your email sending logic here
+          # You can use an email sending service or SMTP to send emails
+          # Make sure to include the PR information and labels in the email content
