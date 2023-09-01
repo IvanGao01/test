@@ -48,6 +48,7 @@ Eight different users performed twenty repetitions of twenty different gestures,
 
 </details>
 
+
 **Disclaimer: SmartWatch Gestures Dataset is provided for research or academic purposes only. Publications and works that use this dataset should please refer to one of the papers referenced below.**
 
 ### publications
